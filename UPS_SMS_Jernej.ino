@@ -47,7 +47,7 @@ void sendSMS(String text){
   String abc = sms.readString();
   Serial.println(abc);
   delay(500);
-  sms.print("AT+CMGS=\"+38641824545\"\r\n");
+  sms.print("AT+CMGS=\"+00000000000\"\r\n");
   delay(300);
   sms.print(text);
   sms.write(26);
